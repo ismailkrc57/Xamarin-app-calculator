@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xamarinapp1="clr-namespace:Xamarinapp1;assembly=Xamarinapp1"
+             x:Class="Xamarinapp1.Calculatorpage"
+             BackgroundColor="#D4D4D2"
+             Padding="3">
+    <ContentPage.Content>
+
+        <Grid RowSpacing="0.5" ColumnSpacing="0.5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="230" />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackLayout  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" BackgroundColor="#1C1C1C" Orientation="Vertical">
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="90"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label  Grid.Row="0" Grid.Column="1"
+                           Padding="5,15,0,0"
+                           HorizontalOptions="End"
+                           x:Name="lblresult"
+                           Text=""
+                           TextColor="#FFF"
+                           FontSize="35"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="1" Grid.Column="1"
+                           Padding="5,0"
+                        x:Name="lblsonuc1"
+                        Text=""
+                        TextColor="#FFF"
+                        HorizontalOptions="End"
+                        FontSize="24"
+                        FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1"
+                           Padding="5,0"
+                           x:Name="lblislem"
+                           Text=""
+                           TextColor="#FFF"
+                           HorizontalOptions="End"
+                           FontSize="24"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="3" Grid.Column="1"
+                           Padding="5,0"
+                           x:Name="lblsonuc"
+                           Text="0"
+                           TextColor="#FFF"
+                           HorizontalOptions="End"
+                           FontSize="24"
+                           FontAttributes="Bold"/>
+                </Grid>
+                
+            </StackLayout>
+            <Button x:Name="btnclear" Clicked="Btnclear_OnClicked" Grid.Row="1" Grid.Column="0" Text="C" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10"></Button>
+            <Button x:Name="btnpercent" Clicked="Btnpercent_OnClicked" Grid.Row="1" Grid.Column="1" Text="%" FontSize="100" FontAttributes="Bold" TextColor="#FF9500" Padding="0,0,0,10" />
+            <Button x:Name="btndivide" Clicked="Btndivide_OnClicked" Grid.Row="1" Grid.Column="2" Text="/" FontSize="100" FontAttributes="Bold" TextColor="#FF9500" Padding="0,0,0,10" />
+            <ImageButton Clicked="Btnback_OnClicked" x:Name="btnback" Grid.Row="1" Grid.Column="3" Source="back4.png"  ></ImageButton>
+            <Button x:Name="btn7" Clicked="Btn7_OnClicked" Grid.Row="2" Grid.Column="0" Text="7" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btn8" Clicked="Btn8_OnClicked" Grid.Row="2" Grid.Column="1" Text="8" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btn9" Clicked="Btn9_OnClicked" Grid.Row="2" Grid.Column="2" Text="9" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btnX" Clicked="BtnX_OnClicked" Grid.Row="2" Grid.Column="3" Text="x" FontSize="90" FontAttributes="Bold" TextColor="#FF9500" Padding="0,0,0,10" />
+            <Button x:Name="btn4" Clicked="Btn4_OnClicked" Grid.Row="3" Grid.Column="0" Text="4" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btn5" Clicked="Btn5_OnClicked" Grid.Row="3" Grid.Column="1" Text="5" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btn6" Clicked="Btn6_OnClicked" Grid.Row="3" Grid.Column="2" Text="6" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btnminnes" Clicked="Btnminnes_OnClicked" Grid.Row="3" Grid.Column="3" Text="-" FontSize="100" FontAttributes="Bold" TextColor="#FF9500" Padding="0,0,0,10" />
+            <Button x:Name="btn1" Clicked="Btn1_OnClicked" Grid.Row="4" Grid.Column="0" Text="1" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btn2" Clicked="Btn2_OnClicked" Grid.Row="4" Grid.Column="1" Text="2" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btn3" Clicked="Btn3_OnClicked" Grid.Row="4" Grid.Column="2" Text="3" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btnplus" Clicked="Btnplus_OnClicked" Grid.Row="4" Grid.Column="3" Text="+" FontSize="100" FontAttributes="Bold" TextColor="#FF9500" Padding="0,0,0,10" />
+            <Button x:Name="btn0" Clicked="Btn0_OnClicked" Grid.Row="5" Grid.Column="0" Text="0" FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btndot" Clicked="Btndot_OnClicked" Grid.Row="5" Grid.Column="1" Text="." FontSize="100" FontAttributes="Bold" TextColor="#505050" Padding="0,0,0,10" />
+            <Button x:Name="btnresult" Clicked="Btnresult_OnClicked" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Text="=" FontSize="100" FontAttributes="Bold" TextColor="#80CEEF" Padding="0,0,0,10" />
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

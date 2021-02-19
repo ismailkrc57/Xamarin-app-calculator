@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarinapp1.Watches"
+             BackgroundColor="#f4f9f9">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Akıllı Saatler"
+                       HorizontalOptions="Center"
+                       TextColor="#eb5e0b"
+                       FontAttributes="Bold"
+                       FontSize="30"
+                       Padding="0,15" />
+                <StackLayout>
+                    <StackLayout Margin="6,0" BackgroundColor="White"
+                                 Orientation="Horizontal">
+                        <StackLayout>
+                            <Image Source="https://productimages.hepsiburada.net/s/44/400-592/10769572397106.jpg" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" Spacing="17">
+                            <StackLayout>
+                                <Label Text="Apple Watch"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="25" />
+                                <Label
+                                    Text="It has survived not when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0,0, 0, 50">
+                                <Label TextColor="#eb5e0b" Text="2100₺" FontSize="Large"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="0,15,0,0" />
+                                <Button TextColor="White"
+                                        Clicked="Button1_OnClicked"
+                                        HorizontalOptions="End"
+                                        Text="Sepete ekle"
+                                        TextTransform="None" BackgroundColor="#5eaaa8" />
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="End">
+                                <Label x:Name="label1" Text="" TextColor="Green"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                        
+
+
+                    </StackLayout>
+                    <StackLayout Margin="6,0" BackgroundColor="White"
+                                 Orientation="Horizontal">
+                        <StackLayout>
+                            <Image Source="https://productimages.hepsiburada.net/s/40/550/10679461576754.jpg/format:webp" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" Spacing="17">
+                            <StackLayout>
+                                <Label Text="Mi Band 4"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="25" />
+                                <Label
+                                    Text="It has survived not when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0,0, 0, 50">
+                                <Label TextColor="#eb5e0b" Text="310₺" FontSize="Large"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="0,15,0,0" />
+                                <Button TextColor="White"
+                                        Clicked="Button2_OnClicked"
+                                        HorizontalOptions="End"
+                                        Text="Sepete ekle"
+                                        TextTransform="None" BackgroundColor="#5eaaa8" />
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="End">
+                                <Label x:Name="label2" Text="" TextColor="Green"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                    <StackLayout Margin="6,0" BackgroundColor="White"
+                                 Orientation="Horizontal">
+                        <StackLayout>
+                            <Image Source="https://productimages.hepsiburada.net/s/54/400-592/11168827179058.jpg" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" Spacing="17">
+                            <StackLayout>
+                                <Label Text="Mİ Watch"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="25" />
+                                <Label
+                                    Text="It has survived not when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0,0, 0, 50">
+                                <Label TextColor="#eb5e0b" Text="1800₺" FontSize="Large"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="0,15,0,0" />
+                                <Button TextColor="White"
+                                        Clicked="Button3_OnClicked"
+                                        HorizontalOptions="End"
+                                        Text="Sepete ekle"
+                                        TextTransform="None" BackgroundColor="#5eaaa8" />
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="End">
+                                <Label x:Name="label3" Text="" TextColor="Green"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                    <StackLayout Margin="6,0" BackgroundColor="White"
+                                 Orientation="Horizontal">
+                        <StackLayout>
+                            <Image Source="https://productimages.hepsiburada.net/s/21/400-592/9914377732146.jpg" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" Spacing="17">
+                            <StackLayout>
+                                <Label Text="Samsung Watch"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="25" />
+                                <Label
+                                    Text="It has survived not when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0,0, 0, 50">
+                                <Label TextColor="#eb5e0b" Text="2180₺" FontSize="Large"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="0,15,0,0" />
+                                <Button TextColor="White"
+                                        Clicked="Button4_OnClicked"
+                                        HorizontalOptions="End"
+                                        Text="Sepete ekle"
+                                        TextTransform="None" BackgroundColor="#5eaaa8" />
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="End">
+                                <Label x:Name="label4" Text="" TextColor="Green"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                    <StackLayout Margin="6,0" BackgroundColor="White"
+                                 Orientation="Horizontal">
+                        <StackLayout>
+                            <Image Source="https://productimages.hepsiburada.net/s/43/400-592/10770300141618.jpg" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" Spacing="17">
+                            <StackLayout>
+                                <Label Text="Oppo"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="25" />
+                                <Label
+                                    Text="It has survived not when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0,0, 0, 50">
+                                <Label TextColor="#eb5e0b" Text="760₺" FontSize="Large"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="0,15,0,0" />
+                                <Button TextColor="White"
+                                        Clicked="Button5_OnClicked"
+                                        HorizontalOptions="End"
+                                        Text="Sepete ekle"
+                                        TextTransform="None" BackgroundColor="#5eaaa8" />
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="End">
+                                <Label x:Name="label5" Text="" TextColor="Green"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                    <StackLayout Margin="6,0" BackgroundColor="White"
+                                 Orientation="Horizontal">
+                        <StackLayout>
+                            <Image Source="https://productimages.hepsiburada.net/s/26/400-592/10143072419890.jpg" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" Spacing="17">
+                            <StackLayout>
+                                <Label Text="Honor Watch"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="25" />
+                                <Label
+                                    Text="It has survived not when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0,0, 0, 50">
+                                <Label TextColor="#eb5e0b" Text="190₺" FontSize="Large"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="0,15,0,0" />
+                                <Button TextColor="White"
+                                        Clicked="Button6_OnClicked"
+                                        HorizontalOptions="End"
+                                        Text="Sepete ekle"
+                                        TextTransform="None" BackgroundColor="#5eaaa8" />
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="End">
+                                <Label x:Name="label6" Text="" TextColor="Green"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarinapp1.gridpage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Coral" Padding="10">
+            <Label BackgroundColor="Aqua" Grid.Row="0" Grid.Column="0" Text="row 1 col 1" />
+            <Label BackgroundColor="Aqua" Grid.Row="0" Grid.Column="1" Text="row 1 col 2" />
+            <Label BackgroundColor="Aqua" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Text="row 2 col 1" />
+            <Label BackgroundColor="Aqua" Grid.Row="1" Grid.Column="1" Text="row 2 col 2" />
+            <Label BackgroundColor="Aqua" Grid.Row="2" Grid.Column="1" Text="row 3 col 2" />
+            <Label BackgroundColor="Aqua" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Col span" />
+            <Label BackgroundColor="Aqua" Grid.Row="0" Grid.Column="2" Grid.RowSpan="4">Row span</Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
